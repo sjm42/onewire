@@ -1,8 +1,8 @@
 [package]
 name = "onewire"
-version = "0.3.13"
-authors = ["Michael Watzko <michael@watzko.de>"]
-repository = "https://github.com/kellerkindt/onewire"
+version = "0.4.0"
+authors = ["Michael Watzko <michael@watzko.de>", "Sami J. Mäkinen <sjm@iki.fi>"]
+repository = "https://github.com/sjm42/onewire"
 description = "OneWire implementation using embedded_hal as abstraction layer, based on arduino OneWire library. WIP"
 keywords = ["embedded", "onewire", "embedded-hal-driver", "1wire", "stm32"]
 categories = ["embedded", "hardware-support", "no-std"]
@@ -14,7 +14,4 @@ edition = "2018"
 
 [dependencies]
 byteorder = { version = "1", default-features = false }
-
-[dependencies.embedded-hal]
-features = ["unproven"]
-version = "0.2.1"
+embedded-hal = { version = "1" }
